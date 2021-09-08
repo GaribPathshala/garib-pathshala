@@ -1,0 +1,183 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(47, 54, 36, 0.034);
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.banner{
+    width: 100%;
+}
+.donation_form{
+    width: 450px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    background-color: white;
+    padding: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 200ms;
+}
+.donation_form:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 255, 234, 0.329), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 200ms;
+}
+
+
+fieldset{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    outline: 0;
+    border-color: rgba(255, 255, 255, 0);
+    font-size: 22px;
+}
+
+
+.pay_using_banner_container{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    margin-top: 35px;
+}
+.pay_using_banner_container h3{
+    text-align: center;
+}
+.pay_using_banner{
+    width: 500px;
+}
+
+
+.donations_header{
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.donations_container{
+    background-color: rgba(0, 238, 255, 0.48);
+    padding-bottom: 100px;
+}
+#donations {
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 300ms;
+  }
+  #donations:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 255, 242, 0.568), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 300ms;
+  }
+  
+  #donations td, #donations th {
+    border: 1px solid rgb(145, 145, 145);
+    padding: 8px;
+  }
+  
+  #donations tr:nth-child(even){background-color: #d4d4d4be;}
+  #donations tr:nth-child(odd){background-color: #ecececbe;}
+  
+  #donations tr:hover {background-color: rgb(200, 249, 255);}
+  
+  #donations th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #00a2ff94;
+    color: rgb(43, 43, 43);
+  }
+
+.header_wrapper{
+    text-align: center;
+}
+.section_header{
+    color: #505050;
+    font-size: 200%;
+    position: relative;
+    display: inline-block;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: default;
+    margin-bottom: 0;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+.section_header::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 30%;
+    border-bottom: 0.3rem solid #3888ff;
+    transition: width 0.3s ease;
+}
+.section_header:hover:after {
+    width: 100%;
+}
+.left_donation_container{
+    margin-top: 55px;
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 200ms;
+    border-radius: 5px;
+}
+.left_donation_container:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 255, 242, 0.568), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 300ms;
+  }
+  
+
+
+
+@media screen and (max-width:768px){
+    .pay_using_banner{
+        width: 400px;
+    }
+    .pay_using_banner_container h3{
+        font-size: 15px;
+    }
+    #donations{
+        width: 90%;
+    }
+    .left_donation_container{
+        width: 100%;
+    }
+    .donation_form{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:445px){
+    .pay_using_banner{
+        width: 250px;
+    }
+}
+@media screen and (max-width:580px){
+    
+    .left_donation_container{
+        padding: 10px;
+    }
+  }
+@media screen and (max-width:453px){
+    
+    .left_donation_container{
+        padding: 10px;
+    }
+  }

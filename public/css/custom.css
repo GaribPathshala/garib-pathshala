@@ -1,0 +1,36 @@
+.center-slots-area {
+    border: #ced4da 1px solid; 
+    border-radius: 15px;
+}
+
+.center-slots-area-blank {
+    padding: 25px 50px;
+}
+
+.center-slots-area-active {
+    height: 500px; 
+    overflow: auto;
+}
+
+
+    div.center-result-area::-webkit-scrollbar{
+        width: 5px;
+        height: 5px;
+        }
+        div.center-result-area::-webkit-scrollbar-thumb{
+        background: #B3AFB3;
+        border-radius: 0px;
+        }
+        div.center-result-area::-webkit-scrollbar-thumb:hover{
+        background: #B3AFB3;
+        }
+        div.center-result-area::-webkit-scrollbar-track{
+        background: #F0F0F0;
+        border-radius: 0px;
+        box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+        }
+
+
+        table.covid-vaccine td {
+            vertical-align: top;
+        }
