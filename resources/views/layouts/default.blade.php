@@ -51,22 +51,6 @@
     </div>
   </div>
 
-  <div id="topbar" style="opacity: 0 !important; position: unset !important;" class="topbar d-none d-lg-flex align-items-center fixed-top dynamicTopbar">
-    <div class="container d-flex">
-      <div class="contact-info mr-auto">
-        <i class="icofont-envelope"></i> <a href="mailto:contact@garibpathshala.in">contact@garibpathshala.in</a>
-        <i class="icofont-phone"></i><a href="tel:+91 8902984277">+91 8902 984 277</a>
-      </div>
-      <div class="social-links">
-        <a href="https://twitter.com/GaribPathshala" target="_blank" class="twitter"><i class="icofont-twitter"></i></a>
-        <a href="https://www.facebook.com/GaribPathshala" target="_blank" class="facebook"><i class="icofont-facebook"></i></a>
-        <a href="https://www.instagram.com/garibpathshala" target="_blank" class="instagram"><i class="icofont-instagram"></i></a>
-        <a href="https://web.whatsapp.com/send?phone=918902984277&amp;text=Hello," target="_blank" class="whatsapp"><i class="icofont-brand-whatsapp"></i></a>
-        <a href="https://www.youtube.com/c/GaribPathshala?sub_confirmation=1" target="_blank" class="youtube"><i class="icofont-youtube-play"></i></a>
-      </div>
-    </div>
-  </div>
-
 
   <!-- ======= Header ======= -->
   <header id="header"  class="header fixed-top dynamicHeader" >
@@ -84,7 +68,7 @@
           <li class="@yield('nav-ul-about')"><a href=" @if(isset($page) && $page != 'home') {{url('/')}} @endif #about_us_section">About</a></li>
           <li class="@yield('nav-ul-gallery')"><a href="{{ route('/gallery')}}">Gallery</a></li>
           <li class="@yield('nav-ul-contact')"><a href="{{ route('/contact')}}">Contact</a></li>
-          <li class="@yield('nav-ul-join') @yield('nav-ul-volunteer') drop-down"><a href="{{ route('/join')}}">Get Involved</a>
+          <li class="@yield('nav-ul-volunteer') drop-down"><a href="{{ route('/join')}}">Get Involved</a>
             <ul>
               <li class="@yield('nav-ul-volunteer')"><a href="{{ route('/join')}}">Volunteer</a></li>
               <li class="@yield('nav-ul-donate')"><a href="{{ route('/donate')}}">Donate</a></li>
@@ -108,54 +92,10 @@
     </div>
   </header><!-- End Header -->
 
-
-    <!-- ======= Header ======= -->
-    <header id="header" style="opacity: 0 !important; position: unset !important;" class="fixed-top dynamicHeader header" >
-      <div class="container d-flex align-items-center">
+  <div class="headerBack"></div>
   
-      <h1 class="logo mr-auto"><a href="{{route('/')}}"><img src="{{asset('assets/img/logo_txt_black.png')}}" alt=""></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
-  
-        <nav class="nav-menu d-none d-lg-block">
-          <ul>
-            <li class="@yield('nav-ul-home')"><a href=" @if(isset($page) && $page != 'home') {{url('/')}} @endif #home">Home</a></li>
-            <li class="@yield('nav-ul-projects')"><a href=" @if(isset($page) && $page != 'home') {{url('/')}} @endif #projects_section">Projects</a></li>
-            <li class="@yield('nav-ul-team')"><a href=" @if(isset($page) && $page != 'home') {{url('/')}} @endif #meet_the_team_section">Team</a></li>
-            <li class="@yield('nav-ul-about')"><a href=" @if(isset($page) && $page != 'home') {{url('/')}} @endif #about_us_section">About</a></li>
-            <li class="@yield('nav-ul-gallery')"><a href="{{ route('/gallery')}}">Gallery</a></li>
-            <li class="@yield('nav-ul-contact')"><a href="{{ route('/contact')}}">Contact</a></li>
-            <li class="@yield('nav-ul-join') @yield('nav-ul-volunteer') drop-down"><a href="{{ route('/join')}}">Get Involved</a>
-              <ul>
-                <li class="@yield('nav-ul-volunteer')"><a href="{{ route('/join')}}">Volunteer</a></li>
-                <li class="@yield('nav-ul-donate')"><a href="{{ route('/donate')}}">Donate</a></li>
-              </ul>
-            </li>
-            <li class="@yield('nav-ul-covid-center-locator') drop-down"><a href="#">COVID-19</a>
-              <ul>
-                <li class="@yield('nav-ul-covid-center-locator')"><a href="{{ route('covid-center-locator')}}">Vaccine Locator</a></li>
-              </ul>
-            </li>
-            <li class="drop-down @yield('nav-ul-donate') @yield('nav-ul-download-donation-certificate')"><a href="{{ route('/donate')}}">Donate</a>
-              <ul>
-                <li class="@yield('nav-ul-donate')"><a href="{{ route('/donate')}}">Donate</a></li>
-                <li class="@yield('nav-ul-download-donation-certificate')"><a href="{{ route('/donate/download')}}">Download Receipt/Certificate</a></li>
-              </ul>
-            </li>
-          </ul>
-        
-        </nav><!-- .nav-menu -->
-  
-      </div>
-    </header><!-- End Header -->
-
-
-
-
-
 <body>
     
-  
 
 @yield('content')
 
@@ -251,7 +191,7 @@
   @yield('bottom-includes')
 
 
-  {{-- <script>
+  <script>
     $(document).ready(function () {
       cloneHeaderHeight();
     });
@@ -263,6 +203,6 @@
       var Headerheight = $('.dynamicTopbar').height() + $('.dynamicHeader').height() + 50;
       $('.headerBack').css('height', Headerheight)
     }
-  </script> --}}
+  </script>
 
 </html>

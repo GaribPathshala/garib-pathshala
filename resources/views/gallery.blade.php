@@ -7,7 +7,7 @@
 @section('content')
     
 <section id="portfolio" class="portfolio">
-<div class="container" style="margin-top: 115px;" data-aos="fade-up">
+<div class="container" data-aos="fade-up">
 
     <div class="section-title">
       <h2>Gallery</h2>

@@ -1,7 +1,9 @@
 @extends('layouts.default')
 
 @section('title' , 'Submitted')
-    
+
+@section('title' , 'Join Us')
+
 @section('top-ncludes')
     <style>    
     html,body{
@@ -19,30 +21,6 @@
         }
     }
     </style>
-@endsection
-
-@section('nav-ul')
-<ul>
-  <li><a href="{{ route('/')}}">Home</a></li>
-  <li><a href="{{ url('/#projects_section')}}">Projects</a></li>
-  <li><a href="{{ url('/#meet_the_team_section')}}">Team</a></li>
-  <li><a href="{{ url('/#about_us_section')}}">About</a></li>
-  <li><a href="{{ route('/gallery')}}">Gallery</a></li>
-  <li><a href="{{ route('/contact')}}">Contact</a></li>
-  <li class="drop-down active"><a href="{{ route('/join')}}">Get Involved</a>
-    <ul>
-      <li><a href="{{ route('/join')}}">Volunteer</a></li>
-      <li><a href="{{ route('/donate')}}">Donate</a></li>
-    </ul>
-  </li>
-  <li class="drop-down"><a href="{{ route('/donate')}}">Donate</a>
-    <ul>
-      <li><a href="{{ route('/donate')}}">Donate</a></li>
-      <li><a href="{{ route('/donate/download')}}">Download Receipt/Certificate</a></li>
-    </ul>
-  </li>
-
-</ul>
 @endsection
 
 
