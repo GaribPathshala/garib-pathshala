@@ -37,6 +37,13 @@ Route::get('/', function () {
     return view('home');
 })->name('/');
 
+Route::get('/curl-ip', function () {
+    $ip = $_SERVER['REMOTE_ADDR'];
+    $ip_server = $_SERVER['SERVER_ADDR'];
+  
+    echo $ip.'<br>'.$ip_server;
+});
+
 Route::get('/projects', function () {
     return redirect('/#projects_section');
 })->name('/projects');
