@@ -23,6 +23,16 @@ use App\Http\Controllers\DownloadReceiptController;
 */
 
 
+Route::group(['prefix' => 'covid'], function(){ 
+    Route::get('/', [App\Http\Controllers\CovidController::class, 'infoPage'])->name('covid');
+    Route::get('/center-locator', [App\Http\Controllers\CovidController::class, 'centerLocatorPage'])->name('covid-center-locator');
+    Route::get('/slot-booking', [App\Http\Controllers\CovidController::class, 'slotBookingPage'])->name('covid-slot-booking');
+});
+
+
+
+
+
 Route::get('/', function () {
     return view('home');
 })->name('/');
@@ -71,9 +81,7 @@ Route::post('/join/teacher/submit',[JoinController::class, 'TeacherSubmit'])->na
 
 Route::post('/contact',[TicketController::class, 'RaiseTicket'])->name('/contact');
 
-Route::group(['prefix' => 'covid'], function(){ 
-    Route::get('/center-locator', [App\Http\Controllers\CovidController::class, 'centerLocatorPage'])->name('covid-center-locator');
-});
+
 
 Route::group(['prefix' => 'donate'], function(){
     // Donation Routes

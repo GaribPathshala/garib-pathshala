@@ -60,7 +60,6 @@
   .legal_container {
     padding-top: 30px;
     padding-bottom: 75px;
-    margin-top: 150px;
     margin-left: 10%;
     margin-right: 10%;
   }

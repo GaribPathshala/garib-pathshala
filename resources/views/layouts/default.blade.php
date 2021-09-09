@@ -74,9 +74,10 @@
               <li class="@yield('nav-ul-donate')"><a href="{{ route('/donate')}}">Donate</a></li>
             </ul>
           </li>
-          <li class="@yield('nav-ul-covid-center-locator') drop-down"><a href="#">COVID-19</a>
+          <li class="@yield('nav-ul-covid-center-locator') @yield('nav-ul-covid-slot-booking') drop-down"><a href="{{route('covid')}}">COVID-19</a>
             <ul>
               <li class="@yield('nav-ul-covid-center-locator')"><a href="{{ route('covid-center-locator')}}">Vaccine Locator</a></li>
+              <li class="@yield('nav-ul-covid-slot-booking')"><a href="{{ route('covid-slot-booking')}}">Book Your Slot</a></li>
             </ul>
           </li>
           <li class="drop-down @yield('nav-ul-donate') @yield('nav-ul-download-donation-certificate')"><a href="{{ route('/donate')}}">Donate</a>
@@ -92,7 +93,8 @@
     </div>
   </header><!-- End Header -->
 
-  <div class="headerBack"></div>
+  <div class="topbarBack m-none" style="height: 40px;"></div>
+  <div class="headerBack" style="height: 73px;"></div>
   
 <body>
     
@@ -187,22 +189,11 @@
 
   <!-- Template Main JS File -->
   <script src="{{ asset('bizland/assets/js/main.js')}}"></script>
+  <script src="{{ asset('js/main.js')}}"></script>
+
 
   @yield('bottom-includes')
 
 
-  <script>
-    $(document).ready(function () {
-      cloneHeaderHeight();
-    });
-    $(document).on('scroll', function () {
-      cloneHeaderHeight();
-    });
-
-    function cloneHeaderHeight() {
-      var Headerheight = $('.dynamicTopbar').height() + $('.dynamicHeader').height() + 50;
-      $('.headerBack').css('height', Headerheight)
-    }
-  </script>
 
 </html>

@@ -12,17 +12,19 @@ class CenterLocator extends Component
     protected $centers=[];
     public $searchDate;
     public $remark;
+    public $dateBtn;
 
     public function mount()
     {
         $this->searchDate = date('d-m-Y');
+        $this->dateBtn = $this->searchDate;
     }
     
     public $form = [
         'search_by'     => 'postal_code',
         'state_id'      => '',
         'district_id'   => '',
-        'postal_code'   => '743126',
+        'postal_code'   => '',
     ];
 
     protected function rules() {
@@ -53,6 +55,7 @@ class CenterLocator extends Component
 
         $this->remark = null;
         $this->centers = [];
+       
 
         if ($field == 'form.state_id') {
             $this->form['district_id'] = '';
@@ -88,6 +91,7 @@ class CenterLocator extends Component
                 $this->remark = 'center_available';
             }
             $this->centers = collect($response->centers)->sortBy('name');
+            $this->emit('showDateData', $this->searchDate);
         }
     }
 

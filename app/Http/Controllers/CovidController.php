@@ -10,4 +10,14 @@ class CovidController extends Controller
     {
         return view('covid.center-locator');
     }
+
+    public function infoPage()
+    {
+        return view('covid.info');
+    }
+
+    public function slotBookingPage()
+    {
+        return view('covid.slot-booking');
+    }
 }

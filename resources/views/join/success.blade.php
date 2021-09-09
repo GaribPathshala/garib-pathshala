@@ -26,7 +26,7 @@
 
 
 @section('content')
-<div class="status_container" style="margin-left: auto; margin-right: auto; margin-top: 175px; margin-bottom: 8%;">
+<div class="status_container" style="margin-left: auto; margin-right: auto; margin-top: 10px; margin-bottom: 8%;">
 <img class="mb-3 mt-3" src="{{asset('assets/img/submitted.jpg')}}" alt="" width="150px" height="150px" style="display: block; margin-left: auto; margin-right: auto; text-align:center;"> 
     <h1 style="color: green; font-weight: 700; text-align: center;">Submitted Successfully</h1> 
     <h3 style="color: grey; font-weight: 700; text-align: center;">Thank You!<br></h3> 

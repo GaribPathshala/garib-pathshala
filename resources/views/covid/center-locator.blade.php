@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-<div style="">
+<div style="" class="livewire-wrapper">
 
     @livewire('covid.center-locator')
 

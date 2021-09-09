@@ -34,3 +34,90 @@
         table.covid-vaccine td {
             vertical-align: top;
         }
+
+
+.crada.btn.btn-primary{
+    color: #fff;
+}
+.crada.btn {
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+.crada.hero-v1 {
+    padding: 8rem 0;
+    border-bottom-right-radius: 50%;
+    background: rgb(66 194 255 / 16%);
+    overflow: hidden;
+}
+.crada.hero-v1 .illustration {
+    position: relative;
+    margin-top: -100px;
+    position: absolute;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.site-section {
+    padding: 90px 0;
+}
+@media (min-width: 768px){
+    .site-section {
+        padding: 8em 0;
+    }
+}
+
+
+.site-section {
+    padding: 2.5em 0;
+}
+
+.section-heading {
+    font-size: 30px;
+    font-weight: 900;
+    color: #d54451;
+}
+
+#header {
+    padding: 15px 0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .topbarBack {
+      display: none !important;
+    }
+    .headerBack {
+        height: 71px !important;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+      .d-only {
+          display: none !important;
+      }
+
+      .m-only {
+          display: unset !important;
+      }
+  }
+  @media only screen and (min-width: 769px) {
+      .d-only {
+          display: unset !important;
+      }
+
+      .m-only {
+          display: none !important;
+      }
+  }
+
+
+    .date-btn.clicked {
+        background-color: #007bff;
+        border-color: #007bff;
+        color: white;
+    }
