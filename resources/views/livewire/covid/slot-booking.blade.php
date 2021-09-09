@@ -47,7 +47,10 @@
         </div>
         @endif
         
-        
+
+        <div class="text-center text-danger">
+            Under Construction! 
+        </div>
         @if ($status == 'fresh')
             <button wire:click="mobileNumberSubmit" class="btn btn-block" style="background-color: #002060; color: white;">Generate OTP
                 

@@ -165,7 +165,13 @@
                                                 <div class="col-md-4 d-flex justify-content-center align-items-center">
                                                     <span>D1<br>{{ $session->available_capacity_dose1 }}</span>
                                                 </div>
-                                                <div class="col-md-4 d-flex justify-content-center align-items-center"  style="background-color: #a9d18e">
+
+                                                <div class="col-md-4 d-flex justify-content-center align-items-center"  
+                                                style="background-color: 
+                                                @if ($session->available_capacity_dose1 + $session->available_capacity_dose2 < 11) #ffe47a
+                                                @else #a9d18e 
+                                                @endif ">
+
                                                     <span>{{ $session->available_capacity_dose1 + $session->available_capacity_dose2 }}</span>
                                                 </div>
                                                 <div class="col-md  -4 d-flex justify-content-center align-items-center">
@@ -355,8 +361,21 @@
                                                                         <div class="col-4 d-flex justify-content-center align-items-center">
                                                                             <span>D1<br>{{ $session->available_capacity_dose1 }}</span>
                                                                         </div>
-                                                                        <div class="col-4 d-flex justify-content-center align-items-center"  style="background-color: #a9d18e">
+                                                                        <div class="col-4 d-flex justify-content-center align-items-center"  
+                                                                        style="background-color: 
+                                                                        @if ($session->available_capacity_dose1 + $session->available_capacity_dose2 == 0) 
+                                                                            #dc3545
+                                                                        @elseif ($session->available_capacity_dose1 + $session->available_capacity_dose2 < 11) 
+                                                                            #ffe47a
+                                                                        @else 
+                                                                            #a9d18e 
+                                                                        @endif ">
+                                                                            @if ($session->available_capacity_dose1 + $session->available_capacity_dose2 == 0) 
+                                                                                <span style="color: white">Booked</span>
+                                                                            @else  
                                                                             <span>{{ $session->available_capacity_dose1 + $session->available_capacity_dose2 }}</span>
+                                                                            @endif
+                                                                            
                                                                         </div>
                                                                         <div class="col-4 d-flex justify-content-center align-items-center">
                                                                             <span>D2<br>{{ $session->available_capacity_dose2 }}</span>

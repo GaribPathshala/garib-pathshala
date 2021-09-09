@@ -7,7 +7,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 mr-auto text-center text-lg-left">
-                <span class="d-block subheading">Covid-19 Awareness</span>
+                <span class="d-block subheading">COVID-19 Awareness</span>
                 <h1 class="heading mb-3">Stay Safe. Stay Home.</h1>
                 <p class="mb-5">
                     Prevention is better than cure!
@@ -32,7 +32,9 @@
 <div class="container text-center " style="padding: 90px 0;">
 
     <p class="">
-        COVID-19 Statistics
+        Page Under Construction <br>
+        <a href="mailto:aniket@garibpathshala.in">-Aniket (Web Dev)</a>
+        
     </p>
 
     <div class="row">
