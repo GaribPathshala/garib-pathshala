@@ -1,4 +1,4 @@
-@extends('layouts.default', ['page' => 'home'])
+@extends('layouts.default', ['home' => true])
 
 @section('title' , 'Home')
 

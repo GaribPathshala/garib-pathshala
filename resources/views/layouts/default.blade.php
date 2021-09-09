@@ -72,10 +72,10 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="@yield('nav-ul-home')"><a href=" @if(isset($page) && $page != 'home') {{url('/')}} @endif #home">Home</a></li>
-          <li class="@yield('nav-ul-projects')"><a href=" @if(isset($page) && $page != 'home') {{url('/')}} @endif #projects_section">Projects</a></li>
-          <li class="@yield('nav-ul-team')"><a href=" @if(isset($page) && $page != 'home') {{url('/')}} @endif #meet_the_team_section">Team</a></li>
-          <li class="@yield('nav-ul-about')"><a href=" @if(isset($page) && $page != 'home') {{url('/')}} @endif #about_us_section">About</a></li>
+          <li class="@yield('nav-ul-home')"><a href=" @if(!isset($home)) {{url('/')}}@endif#home">Home</a></li>
+          <li class="@yield('nav-ul-projects')"><a href=" @if(!isset($home)) {{url('/')}}@endif#projects_section">Projects</a></li>
+          <li class="@yield('nav-ul-team')"><a href=" @if(!isset($home)) {{url('/')}}@endif#meet_the_team_section">Team</a></li>
+          <li class="@yield('nav-ul-about')"><a href=" @if(!isset($home)) {{url('/')}}@endif#about_us_section">About</a></li>
           <li class="@yield('nav-ul-gallery')"><a href="{{ route('/gallery')}}">Gallery</a></li>
           <li class="@yield('nav-ul-contact')"><a href="{{ route('/contact')}}">Contact</a></li>
           <li class="@yield('nav-ul-volunteer') drop-down"><a href="{{ route('/join')}}">Get Involved</a>
