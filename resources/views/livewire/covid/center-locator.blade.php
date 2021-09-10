@@ -1,6 +1,6 @@
 <div class=" pt-5">
     
-    <form wire:submit.prevent="submit" wire:init="loadStates" class="container">
+    <form wire:submit.prevent="submit" class="container">
 
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">

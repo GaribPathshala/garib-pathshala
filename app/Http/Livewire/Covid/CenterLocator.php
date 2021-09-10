@@ -56,6 +56,11 @@ class CenterLocator extends Component
         $this->remark = null;
         $this->centers = [];
        
+        if ($field == 'form.search_by') {
+            if ($this->form['search_by'] == 'district' && count($this->states) == 0) {
+                $this->loadStates();
+            }
+        }
 
         if ($field == 'form.state_id') {
             $this->form['district_id'] = '';
